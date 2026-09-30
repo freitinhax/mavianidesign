@@ -1,0 +1,8 @@
+# Dependências e saídas locais
+node_modules/
+dist/
+.cache/
+
+# Arquivos gerados pelo sistema/editor
+.DS_Store
+Thumbs.db

@@ -1,0 +1,365 @@
+/* Composição visual exclusiva da página inicial. */
+.project-card {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+}
+
+.project-card::before {
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    content: "";
+    background: var(--project-card-image) center / cover no-repeat;
+    opacity: 0;
+    transition: opacity var(--duration-fast) ease;
+}
+
+.project-card--jornadas {
+    --project-card-image: url("../assets/images/jornadas-guiadas/descoberta/Banner.jpg");
+}
+
+.project-card--design-system {
+    --project-card-image: url("../assets/images/design-system/background-image.png");
+}
+
+.project-card--web-design {
+    --project-card-image: url("../assets/images/web-design/hero-collage.png");
+}
+
+.project-card--inovacoes {
+    --project-card-image: url("../assets/images/inovacoes-disruptivas/hero-event-background.png");
+}
+
+@media (any-hover: hover) {
+    .project-card:hover::before {
+        opacity: 1;
+    }
+}
+
+.project-card:focus-within::before {
+    opacity: 1;
+}
+
+/* Geometria e composição exclusivas das seções iniciais da home. */
+.home-hero {
+    position: relative;
+
+}
+
+.home-hero__layout {
+    min-height: 32.5rem;
+    position: relative;
+    padding: 160px 0;
+}
+
+.home-hero__intro {
+    width: min(100%, 50.019rem);
+}
+
+.home-hero__title,
+.home-designologist__copy h2 {
+    color: var(--color-text-secondary);
+    font: var(--weight-regular) 80px / var(--leading-tight) var(--font-display);
+    letter-spacing: var(--tracking-tight);
+}
+
+.home-hero__title {
+    white-space: nowrap;
+}
+
+.home-hero__title-line {
+    position: relative;
+    display: inline-block;
+    max-width: 100%;
+}
+
+.home-hero__scratch {
+    position: absolute;
+    top: .52em;
+    left: -.03em;
+    width: 104%;
+    max-width: none;
+    height: auto;
+    pointer-events: none;
+    user-select: none;
+}
+
+/* Com JavaScript ativo, as rasuras começam ocultas pela direita e a seta pela base.
+   Altere as durações abaixo; mantenha os tempos totais sincronizados em js/main.js. */
+.js .home-hero__scratch {
+    clip-path: inset(0 100% 0 0);
+}
+
+.js .home-hero__arrow {
+    clip-path: inset(0 0 0 100%);
+}
+
+.home-hero__scratch,
+.home-hero__arrow {
+    transition: clip-path 160ms ease-out;
+}
+
+.home-hero__arrow {
+    transition-duration: 200ms;
+}
+
+.home-hero__scratch.is-visible,
+.home-hero__arrow.is-visible {
+    clip-path: inset(0);
+}
+
+.home-hero__copy {
+    display: grid;
+    gap: var(--space-2);
+    margin-top: var(--space-3);
+    min-width: 0;
+}
+
+.home-hero__copy p:first-child {
+    font-size: 14px;
+    line-height: 1.45;
+}
+
+.home-hero__copy p:last-child,
+.home-designologist__copy {
+    color: var(--color-text-soft);
+}
+
+.home-hero__copy p:last-child {
+    font-size: 1rem;
+    line-height: var(--leading-body);
+}
+
+.home-hero__copy span {
+    color: var(--color-text-secondary);
+}
+
+.home-hero__arrow {
+    position: absolute;
+    top: 30rem;
+    left: 22rem;
+    width: 11rem;
+    max-width: none;
+    height: auto;
+    pointer-events: none;
+    transform: rotate(-60deg) scaleY(-1);
+}
+
+.home-designologist {
+    padding-block: 0 8rem;
+}
+
+.home-designologist__definition {
+    display: grid;
+    grid-template-columns: minmax(0, 44.438rem) minmax(17.5rem, 1fr);
+    gap: 5rem;
+    min-height: 31.75rem;
+    padding: var(--space-2);
+}
+
+.home-designologist__copy h2 {
+    color: var(--color-accent);
+}
+
+.home-designologist__copy {
+    min-width: 0;
+    font-size: .8125rem;
+    line-height: var(--leading-body);
+}
+
+.home-designologist__pronunciation {
+    margin-top: var(--space-2);
+}
+
+.home-designologist__copy ol {
+    display: grid;
+    gap: 0;
+    margin: var(--space-6) 0 0;
+    padding-left: 1.625rem;
+    overflow-wrap: anywhere;
+}
+
+.home-hero__mobile-break {
+    display: none;
+}
+
+.home-designologist__sketches {
+    position: relative;
+    min-height: 31.75rem;
+}
+
+.home-designologist__sketch {
+    position: absolute;
+    height: auto;
+}
+
+.home-designologist__sketch--back {
+    z-index: 1;
+    top: 15.29rem;
+    right: 0;
+    width: 11.035rem;
+    rotate: 2.59deg;
+    box-shadow: var(--shadow-200);
+}
+
+.home-designologist__sketch--middle {
+    z-index: 2;
+    top: 8.84rem;
+    left: 0;
+    width: 10.632rem;
+    rotate: -4.68deg;
+    box-shadow: var(--shadow-floating);
+}
+
+.home-designologist__sketch--front {
+    z-index: 3;
+    top: 0;
+    left: 2.08rem;
+    width: 12.435rem;
+    rotate: 7.47deg;
+    box-shadow: var(--shadow-200);
+}
+
+.home-designologist__diagrams {
+    display: grid;
+    grid-template-columns: minmax(0, 482fr) minmax(0, 505fr);
+    gap: 4.625rem;
+    align-items: start;
+    width: min(100%, 66.313rem);
+    margin-inline: auto;
+}
+
+.home-designologist__diagrams img {
+    width: 100%;
+    height: auto;
+}
+
+.home-designologist__ideas,
+.home-designologist__mark {
+    display: block;
+    height: auto;
+    margin-inline: auto;
+}
+
+.home-designologist__ideas {
+    width: min(100%, 55.438rem);
+    margin-top: 5rem;
+}
+
+.home-designologist__mark {
+    width: 4.625rem;
+    margin-top: 4rem;
+}
+
+@media (max-width: 64rem) {
+    .home-hero__title,
+    .home-designologist__copy h2 {
+        font-size: clamp(4rem, 9vw, 6.8125rem);
+    }
+
+    .home-hero__arrow {
+        left: auto;
+        right: 1.5rem;
+    }
+
+    .home-designologist__definition {
+        gap: var(--space-8);
+    }
+}
+
+@media (max-width: 48rem) {
+    .home-hero__layout {
+        min-height: 29rem;
+        padding-top: var(--space-12);
+    }
+
+    .home-hero__arrow {
+        top: 21rem;
+        right: 0;
+        width: 11rem;
+    }
+
+    .home-designologist__definition {
+        grid-template-columns: minmax(0, 1fr) minmax(14rem, .55fr);
+        gap: var(--space-6);
+        min-height: 27rem;
+    }
+
+    .home-designologist__sketches {
+        min-height: 27rem;
+    }
+
+    .home-designologist__diagrams {
+        gap: var(--space-6);
+    }
+}
+
+@media (max-width: 40rem) {
+    .home-hero__layout {
+        min-height: 30rem;
+        padding-top: var(--space-10);
+    }
+
+    .home-hero__title,
+    .home-designologist__copy h2 {
+        font-size: clamp(2.7rem, 12vw, 4rem);
+        overflow-wrap: anywhere;
+    }
+
+    .home-hero__title {
+        white-space: normal;
+    }
+
+    .home-hero__title-line {
+        display: block;
+    }
+
+    .home-hero__mobile-break {
+        display: inline;
+    }
+
+    .home-hero__copy p:first-child {
+        font-size: 1rem;
+    }
+
+    .home-hero__arrow {
+        top: 23.5rem;
+        right: .5rem;
+        width: 9rem;
+    }
+
+    .home-designologist {
+        padding-bottom: 6rem;
+    }
+
+    .home-designologist__definition {
+        grid-template-columns: minmax(0, 1fr);
+        min-height: 0;
+        padding: 0;
+    }
+
+    .home-designologist__sketches {
+        min-height: 22rem;
+        width: min(100%, 19rem);
+        margin-inline: auto;
+    }
+
+    .home-designologist__sketch--back {
+        right: 0;
+    }
+
+    .home-designologist__diagrams {
+        grid-template-columns: minmax(0, 1fr);
+        width: min(100%, 31.563rem);
+        margin-top: var(--space-8);
+    }
+
+    .home-designologist__ideas {
+        margin-top: var(--space-12);
+    }
+
+    .home-designologist__mark {
+        margin-top: var(--space-10);
+    }
+}

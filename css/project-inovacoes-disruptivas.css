@@ -1,0 +1,2306 @@
+.inovacoes-hero::before {
+    position: absolute;
+    z-index: -2;
+    inset: 0;
+    content: "";
+    background: url("../assets/images/inovacoes-disruptivas/hero-event-background.png") center / cover no-repeat;
+    border-bottom: 2px solid var(--color-text-secondary);
+}
+
+.inovacoes-hero::after {
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    content: "";
+}
+
+.inovacoes-hero {
+    border-bottom: 0;
+}
+
+.inovacoes-lab {
+    padding: 120px 0;
+}
+
+.inovacoes-lab__grid {
+    display: grid;
+    gap: var(--space-4);
+    max-width: 660px;
+}
+
+.inovacoes-lab__intro {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: var(--space-4);
+}
+
+.inovacoes-lab__mark {
+    margin: 0;
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+
+.inovacoes-lab__intro h2 {
+    max-width: none;
+}
+
+.inovacoes-lab__intro p:last-child {
+    max-width: none;
+    margin-top: var(--space-4);
+    color: var(--color-text-soft);
+}
+
+.inovacoes-lab__logos {
+    height: auto;
+    object-fit: contain;
+}
+
+.inovacoes-lab__logos-carousel {
+    width: 100%;
+    min-width: 0;
+}
+
+.inovacoes-lab__logos-track {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.inovacoes-lab__logos--duplicate {
+    display: none;
+}
+
+.inovacoes-events {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 30rem;
+    overflow-x: clip;
+    justify-content: center;
+    align-content: space-between;
+}
+
+.inovacoes-events__statement {
+    width: min(42.125rem, calc(100% - 3rem));
+    margin: 0 auto;
+    color: var(--color-text);
+    font: var(--weight-regular) 2.625rem / 1.2 var(--font-display);
+    letter-spacing: -0.03125rem;
+    text-align: center;
+    z-index: 2;
+}
+
+.inovacoes-events__photo {
+    position: absolute;
+    z-index: 1;
+    box-sizing: border-box;
+    margin: 0;
+    overflow: hidden;
+    border: 0.25rem solid var(--color-surface-inverse);
+    box-shadow: var(--shadow-card);
+}
+
+.inovacoes-events__photo img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.inovacoes-events__photo--left-top {
+    top: 0;
+    left: -3.375rem;
+    width: 20.9375rem;
+    height: 12rem;
+    overflow: visible;
+    transform: rotate(-3.07deg);
+}
+
+.inovacoes-events__photo--left-top img {
+    object-fit: contain;
+}
+
+.inovacoes-events__photo--left-bottom {
+    top: 7.4375rem;
+    left: -2.5rem;
+    width: 18.5625rem;
+    height: 12.375rem;
+    transform: rotate(3.07deg);
+}
+
+.inovacoes-events__photo--right {
+    top: 0;
+    right: -3.125rem;
+    width: 19.7875rem;
+    height: 12.3125rem;
+    overflow: visible;
+    transform: rotate(1.94deg);
+}
+
+.inovacoes-events__photo--right img {
+    object-fit: contain;
+}
+
+.inovacoes-events__photo--right-bottom {
+    top: 8.5625rem;
+    right: -4.25rem;
+    width: 22.6875rem;
+    height: 12.75rem;
+    border-width: 0.3125rem;
+    transform: rotate(-1.94deg);
+}
+
+.inovacoes-events__arrow {
+    position: absolute;
+    width: 6.3125rem;
+    height: 8.875rem;
+    transform: translateY(15%) rotate(180deg);
+    align-self: center;
+    justify-self: center;
+}
+
+.inovacoes-results {
+    padding-block-start: var(--space-16);
+}
+
+.inovacoes-results>.container {
+    display: grid;
+    gap: 4.625rem;
+}
+
+.inovacoes-results__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-8);
+    margin: 0;
+    color: var(--color-text);
+    font: var(--weight-regular) 2.625rem / var(--leading-tight) var(--font-display);
+    letter-spacing: -0.03125rem;
+    text-align: center;
+}
+
+.inovacoes-results__star {
+    display: block;
+    flex: 0 0 auto;
+    object-fit: contain;
+}
+
+.inovacoes-results__star--left {
+    width: 2.8208rem;
+    height: 2.4512rem;
+    transform: rotate(-11.45deg);
+}
+
+.inovacoes-results__star--right {
+    width: 3.3166rem;
+    height: 3.2393rem;
+    transform: scaleY(-1) rotate(-38.64deg);
+}
+
+.inovacoes-results__grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: var(--space-6);
+    margin: 0;
+}
+
+.inovacoes-results__card {
+    display: grid;
+    align-content: start;
+    justify-items: center;
+    gap: var(--space-4);
+    min-width: 0;
+    padding: 32px;
+    text-align: center;
+}
+
+.inovacoes-results__card dt {
+    display: grid;
+    justify-items: center;
+    gap: var(--space-4);
+    width: 100%;
+}
+
+.inovacoes-results__icon {
+    --icon-badge-size: 4rem;
+    --icon-badge-content-size: 2rem;
+}
+
+.inovacoes-results__value {
+    color: var(--color-text);
+    font: var(--weight-regular) 6.8125rem / 80px var(--font-display);
+    letter-spacing: -0.125rem;
+}
+
+.number-text {
+    color: var(--color-text);
+    font: var(--weight-regular) 24px / var(--leading-tight) var(--font-display);
+    letter-spacing: 0;
+}
+
+.inovacoes-results__card dd {
+    margin: 0;
+    color: var(--color-text);
+    font: var(--weight-bold) 20px / normal var(--font-interface);
+    letter-spacing: -0.03125rem;
+}
+
+.dungeons-results__metrics dt {
+    color: var(--color-text);
+    font: var(--weight-regular) clamp(2.5rem, 6vw, 4.25rem) / 1 var(--font-display);
+    letter-spacing: var(--tracking-tight);
+}
+
+.dungeons-results__metrics dd {
+    margin: var(--space-2) 0 0;
+    color: var(--color-text-soft);
+    font: var(--weight-semibold) var(--text-xs) / var(--leading-ui) var(--font-interface);
+    text-transform: uppercase;
+}
+
+.inovacoes-project {
+    position: relative;
+}
+
+.inovacoes-project__opening {
+
+    padding-top: 160px;
+}
+
+.inovacoes-project__title {
+    font-size: var(--text-heading-lg);
+    line-height: .92;
+}
+
+.inovacoes-project__opening p:not(.eyebrow) {
+    color: var(--color-text-soft);
+    font-size: var(--text-body);
+}
+
+.inovacoes-project .tag {
+    border: 1px solid var(--color-border-subtle);
+    background: rgb(37 46 50 / .75);
+    color: var(--color-text-soft);
+}
+
+.financas-opening {
+    display: grid;
+    grid-template-columns: minmax(0, 40.625rem) minmax(0, 28.4826rem);
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-6);
+}
+
+.financas-opening__copy {
+    display: grid;
+    gap: var(--space-4);
+    min-width: 0;
+}
+
+.role-opening__copy,
+.dungeons-opening__copy {
+    display: grid;
+    gap: var(--space-6);
+    min-width: 0;
+}
+
+.financas-opening__visual {
+    width: 28.4826rem;
+    min-width: 0;
+    justify-self: center;
+}
+
+.financas-opening__visual img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transform: scaleX(-1);
+}
+
+.financas-opening .inovacoes-project__title {
+    order: 1;
+    font-size: clamp(2.5rem, 13vw, 6.8125rem);
+    line-height: var(--leading-tight);
+    letter-spacing: -0.125rem;
+}
+
+.financas-opening .tag-list {
+    order: 3;
+    gap: var(--space-2);
+}
+
+.financas-opening__copy>p {
+    order: 2;
+}
+
+.financas-opening .tag {
+    padding: 0.375rem 1rem;
+    border: 0;
+    background: var(--color-surface);
+    color: var(--color-text-soft);
+    font: var(--weight-regular) 0.75rem / var(--leading-ui) var(--font-interface);
+    letter-spacing: 0.0625rem;
+}
+
+.financas-acting {
+    padding-block: var(--space-16);
+}
+
+.financas-acting__grid {
+    display: grid;
+    grid-template-columns: minmax(0, 34.3125rem) minmax(0, 26.0625rem);
+    align-items: start;
+    justify-content: space-between;
+    gap: var(--space-12);
+}
+
+.financas-acting__content {
+    display: grid;
+    gap: 2.5rem;
+}
+
+.financas-acting__content h3 {
+    margin: 0;
+    font-size: clamp(2.25rem, 7vw, 4.25rem);
+    line-height: 1.25;
+    letter-spacing: -0.09375rem;
+}
+
+.financas-acting__steps {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-4);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.financas-acting__steps li {
+    display: grid;
+    align-content: start;
+    gap: var(--space-2);
+    min-width: 0;
+    padding: var(--space-6);
+}
+
+.financas-acting__icon {
+    --icon-badge-size: 2rem;
+    --icon-badge-content-size: 1rem;
+}
+
+.financas-acting__steps p {
+    margin: 0;
+    color: var(--color-text-soft);
+    font: var(--weight-medium) 1rem / var(--leading-body) var(--font-body);
+}
+
+.financas-acting__visual {
+    display: grid;
+    gap: var(--space-6);
+    width: 26.0625rem;
+    min-width: 0;
+}
+
+.financas-acting__group {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.financas-carousel {
+    --financas-carousel-gutter: max(1.5rem, calc((100vw - var(--content-max-width)) / 2));
+    padding-block: var(--space-16);
+    margin-top: -180px;
+}
+
+.financas-carousel__scroller {
+    display: flex;
+    gap: var(--space-8);
+    overflow-x: auto;
+    padding-inline: var(--financas-carousel-gutter);
+    scroll-padding-inline: var(--financas-carousel-gutter);
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    cursor: grab;
+    touch-action: pan-y;
+}
+
+.financas-carousel__scroller::-webkit-scrollbar {
+    display: none;
+}
+
+.financas-carousel__scroller.is-dragging {
+    cursor: grabbing;
+    user-select: none;
+}
+
+.financas-carousel__item {
+    flex: 0 0 min(35.5625rem, calc(100vw - (var(--financas-carousel-gutter) * 2)));
+    margin: 0;
+    scroll-snap-align: start;
+}
+
+.financas-carousel__item img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: var(--radius-md);
+    -webkit-user-drag: none;
+    user-select: none;
+}
+
+.financas-carousel__scroller:focus-visible {
+    outline: 0.125rem solid var(--color-border);
+    outline-offset: -0.125rem;
+}
+
+.financas-approved {
+    padding-block: var(--space-16);
+}
+
+.financas-approved__container {
+    display: grid;
+    gap: var(--space-6);
+}
+
+.financas-approved__container>h3 {
+    margin: 0;
+    font-size: 4.25rem;
+    line-height: 5.3125rem;
+    letter-spacing: var(--tracking-tight);
+    text-align: center;
+}
+
+.financas-approved__stage {
+    display: flex;
+    margin: 80px auto;
+    position: relative;
+    width: 80%;
+    aspect-ratio: 1142 / 607;
+    justify-content: center;
+    align-items: center;
+}
+
+.financas-approved__stage figure {
+    margin: 0;
+}
+
+.financas-approved__stage>* {
+    position: absolute;
+}
+
+.financas-approved__sketch,
+.financas-approved__process {
+    overflow: visible;
+    filter: drop-shadow(0 0.25rem 1rem rgb(0 0 0 / .18));
+}
+
+.financas-approved__sketch>img:first-child,
+.financas-approved__process>img:first-child {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(.82);
+}
+
+.financas-approved__sketch--left {
+    top: 37.55%;
+    left: 6.18%;
+    width: 52.49%;
+    height: 55.97%;
+    transform: rotate(-3.81deg);
+}
+
+.financas-approved__sketch--right {
+    top: 23.06%;
+    left: 44.28%;
+    width: 52.88%;
+    height: 56.38%;
+    transform: rotate(-4.52deg);
+}
+
+.financas-approved__sketch-detail {
+    position: absolute;
+    z-index: 1;
+    top: 49%;
+    right: 7%;
+    width: 37.6%;
+    height: auto;
+}
+
+.financas-approved__process {
+    top: 0;
+    left: 0;
+    width: 49.69%;
+    height: 52.98%;
+    transform: rotate(16.8deg);
+}
+
+.financas-approved__process-detail {
+    position: absolute;
+    top: 33%;
+    left: 15%;
+    width: 41.2%;
+    height: auto;
+    mix-blend-mode: color-dodge;
+}
+
+.financas-approved__cover {
+    z-index: 2;
+    width: 70%;
+    aspect-ratio: 1043 / 591;
+    overflow: hidden;
+    border-radius: 0;
+    box-shadow: var(--shadow-floating);
+}
+
+.financas-approved__profile {
+    position: absolute;
+    top: 0;
+    left: 0.78%;
+    width: 99.22%;
+    height: 100%;
+    object-fit: cover;
+    mix-blend-mode: hard-light;
+    transform: rotate(-90deg) scale(1.78);
+}
+
+.financas-final-product {
+    min-height: calc(100vh + 25rem);
+    padding-block: var(--space-16);
+}
+
+.financas-final-product__sticky {
+    position: sticky;
+    top: var(--space-16);
+    display: grid;
+    grid-template-columns: minmax(0, 30.625rem) minmax(0, 35.125rem);
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-12);
+    min-height: 22.875rem;
+}
+
+.financas-final-product__intro {
+    min-width: 0;
+}
+
+.financas-final-product__intro h3 {
+    margin: 0 -0.03125rem -0.5rem 0;
+    font-size: 4.25rem;
+    line-height: 5.3125rem;
+    letter-spacing: var(--tracking-tight);
+}
+
+.financas-final-product__intro>img {
+    display: block;
+    width: 50%;
+    height: auto;
+    object-fit: fill;
+}
+
+.financas-final-product__viewport {
+    height: 22.75rem;
+    overflow: visible;
+    border-radius: var(--radius-md);
+}
+
+.financas-final-product__track {
+    display: grid;
+    gap: 2.3125rem;
+    transform: translateY(var(--financas-final-product-offset, 0));
+    will-change: transform;
+}
+
+.financas-final-product__media {
+    width: 100%;
+    height: 22.75rem;
+}
+
+.financas-final-product__media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 40rem) {
+    .financas-approved__container>h3 {
+        font-size: clamp(2.25rem, 12vw, 4.25rem);
+        line-height: var(--leading-tight);
+    }
+
+    .financas-final-product {
+        min-height: 0;
+        padding-block: var(--space-12);
+    }
+
+    .financas-final-product__sticky {
+        position: static;
+        grid-template-columns: minmax(0, 1fr);
+        gap: var(--space-8);
+        min-height: 0;
+    }
+
+    .financas-final-product__intro h3 {
+        font-size: clamp(2.25rem, 12vw, 4.25rem);
+        line-height: var(--leading-tight);
+    }
+
+    .financas-final-product__viewport {
+        height: auto;
+        overflow: visible;
+    }
+
+    .financas-final-product__track {
+        gap: var(--space-6);
+        transform: none;
+    }
+
+    .financas-final-product__media {
+        height: auto;
+        aspect-ratio: 562 / 364;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) and (min-width: 40.0625rem) {
+    .financas-final-product {
+        min-height: 0;
+    }
+
+    .financas-final-product__sticky {
+        position: static;
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .financas-final-product__viewport {
+        height: auto;
+        overflow: visible;
+    }
+
+    .financas-final-product__track {
+        transform: none;
+    }
+}
+
+.dungeons-acting__grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-3);
+    margin: var(--space-8) 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.dungeons-acting__grid li {
+    min-width: 0;
+    padding: var(--space-6);
+}
+
+.dungeons-acting__grid span {
+    display: block;
+    margin-bottom: var(--space-4);
+    color: var(--color-text-secondary);
+    font: var(--weight-bold) var(--text-label) / 1 var(--font-interface);
+}
+
+.dungeons-acting__grid p {
+    color: var(--color-text-soft);
+    font-size: var(--text-sm);
+}
+
+.role-acting h3,
+.dungeons-challenge h3,
+.dungeons-acting h3,
+.dungeons-feature h3,
+.dungeons-results h3,
+.dungeons-feedback h3 {
+    margin-bottom: var(--space-8);
+}
+
+.role-opening__cover img,
+.role-showcase__board img,
+.role-acting__item img,
+.dungeons-opening__cover img,
+.dungeons-feature__main img,
+.dungeons-feature__side img,
+.dungeons-event__image img {
+    width: 100%;
+    height: auto;
+}
+
+.financas-process {
+    padding: 0px;
+    margin-top: -320px;
+}
+
+.financas-process__layout {
+    display: grid;
+    grid-template-areas:
+        ". arrow"
+        "person collage";
+    grid-template-columns: minmax(0, 28.25rem) minmax(0, 38.0625rem);
+    align-items: center;
+    justify-content: space-between;
+    column-gap: var(--space-12);
+}
+
+.financas-process__arrow {
+    grid-area: arrow;
+    z-index: 1;
+    width: 8.6684rem;
+    height: auto;
+    position: relative;
+    right: 0px;
+    left: 19%;
+    top: 39%;
+}
+
+.financas-process__person,
+.financas-process__collage {
+    min-width: 0;
+    margin: 0;
+}
+
+.financas-process__person {
+    grid-area: person;
+    justify-self: start;
+    width: min(100%, 28.25rem);
+}
+
+.financas-process__collage {
+    grid-area: collage;
+    justify-self: end;
+    width: min(100%, 38.0625rem);
+}
+
+.financas-process__person img,
+.financas-process__collage img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.role-opening {
+    display: grid;
+    grid-template-columns: minmax(0, 40.625rem) minmax(0, 1fr);
+    align-items: center;
+    gap: var(--space-6);
+}
+
+.role-opening .inovacoes-project__title {
+    order: 1;
+    font: var(--weight-bold) 6.8125rem / 1.1 var(--font-interface);
+    letter-spacing: -0.125rem;
+}
+
+.role-opening .tag-list {
+    order: 3;
+    gap: var(--space-2);
+}
+
+.role-opening .tag {
+    padding: 0.375rem 1rem;
+    border: 0;
+    background: var(--color-surface);
+    color: var(--color-text-soft);
+    font: var(--weight-regular) 0.75rem / var(--leading-ui) var(--font-interface);
+    letter-spacing: 0.0625rem;
+}
+
+.role-opening__copy>p {
+    order: 2;
+}
+
+.role-opening__cover {
+    justify-self: end;
+    width: 100%;
+    height: 21.1875rem;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-card);
+}
+
+.role-opening__cover img {
+    display: block;
+    max-width: none;
+    height: auto;
+}
+
+.role-opening__awards {
+    grid-column: 1 / -1;
+    display: flex;
+    align-items: stretch;
+
+    justify-content: space-between;
+    gap: var(--space-3);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.role-opening__awards li {
+    width: 33%;
+    display: flex;
+    align-items: center;
+    gap: var(--space-6);
+    min-width: 0;
+    padding: var(--space-4) var(--space-6);
+    border: 2px solid var(--color-accent);
+    border-radius: var(--radius-md);
+    background: linear-gradient(110deg, rgb(216 192 162 / .1) 16.771%, rgb(255 255 255 / .1) 50%, rgb(216 192 162 / .05) 83.229%);
+}
+
+.role-opening__award-copy {
+    display: grid;
+    gap: 0.25rem;
+    min-width: 0;
+}
+
+.role-opening__award-label {
+    color: var(--color-text-muted);
+    font: var(--weight-regular) var(--text-xs) / 1 var(--font-interface);
+    text-transform: uppercase;
+}
+
+.role-opening__award-copy strong {
+    color: var(--color-surface-inverse);
+    font: var(--weight-regular) var(--text-body) / var(--leading-ui) var(--font-display);
+}
+
+.role-showcase {
+    padding-block-start: var(--space-16);
+}
+
+.role-showcase__grid {
+    display: grid;
+    justify-items: center;
+}
+
+.role-showcase__board {
+    justify-self: center;
+    width: min(100%, 46rem);
+}
+
+.role-showcase__board--group {
+    width: 100%;
+    border-radius: 0;
+}
+
+.role-brief {
+    padding-block: var(--space-16);
+    overflow-x: clip;
+}
+
+.role-brief__intro {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-8);
+    color: var(--color-text-soft);
+}
+
+.role-brief__grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 80px;
+    margin-top: 0;
+}
+
+.role-brief__column {
+    position: relative;
+    isolation: isolate;
+    min-width: 0;
+    padding: 0;
+    border: 0;
+}
+
+.role-brief__column h3 {
+    position: relative;
+    z-index: 1;
+    margin: 0 0 var(--space-6);
+    font: var(--weight-bold) 2.625rem / 1.2 var(--font-interface);
+    letter-spacing: -0.03125rem;
+    text-align: center;
+}
+
+.role-brief__image {
+    position: absolute;
+    z-index: 0;
+    margin: 0;
+    overflow: visible;
+    border-radius: 0;
+    background: none;
+}
+
+.role-brief__image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    max-height: none;
+    object-fit: cover;
+}
+
+.role-brief__column:first-child .role-brief__image {
+    top: -4.125rem;
+    left: -7.5625rem;
+    width: 12.0625rem;
+    height: 12.0625rem;
+}
+
+.role-brief__column:last-child .role-brief__image {
+    top: 80%;
+    left: 66%;
+    width: 16.5rem;
+    height: 11.65rem;
+    filter: drop-shadow(0 0.375rem 0.75rem rgb(20 20 20 / .13));
+}
+
+.role-brief__column ul {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    gap: var(--space-2);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.role-brief__column li {
+    display: flex;
+    align-items: center;
+    min-height: 7.5rem;
+    padding: var(--space-6);
+    border-radius: var(--radius-md);
+    background: var(--color-surface);
+    color: var(--color-text);
+    font: var(--weight-regular) 1.25rem / 1.45 var(--font-body);
+}
+
+.dungeons-feature__copy ul {
+    display: grid;
+    gap: var(--space-4);
+    margin: 0;
+    padding-left: 1.25rem;
+    color: var(--color-text-soft);
+    font-size: var(--text-sm);
+}
+
+.role-acting {
+    padding-block-start: 120px;
+}
+
+.role-acting>.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.role-acting>.container>h3 {
+    order: 1;
+    margin: 0 0 7.5625rem;
+    font-size: clamp(2.25rem, 7vw, 4.25rem);
+    line-height: 1.25;
+    letter-spacing: var(--tracking-tight);
+    text-align: center;
+}
+
+.role-acting__experiences {
+    order: 2;
+    display: grid;
+    gap: 80px;
+}
+
+.role-acting__experience {
+    display: grid;
+    grid-template-columns: minmax(0, 20rem) minmax(0, 1fr);
+    align-items: center;
+    gap: 3rem;
+}
+
+.role-acting__card {
+    display: grid;
+    align-self: center;
+    gap: var(--space-2);
+    min-width: 0;
+    padding: var(--space-6);
+    border-radius: var(--radius-md);
+    background: var(--color-surface);
+}
+
+.role-acting__card p {
+    margin: 0;
+    color: var(--color-text);
+    font: var(--weight-medium) 1.5625rem / 1.45 var(--font-body);
+}
+
+.role-acting__icon {
+    display: grid;
+    width: 2.5rem;
+    height: 2.5rem;
+    place-items: center;
+    border-radius: 999px;
+    background: var(--color-text);
+}
+
+img.role-acting__icon {
+    display: block;
+    border-radius: 0;
+    background: none;
+}
+
+.role-acting__icon>img {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.role-acting__media {
+    min-width: 0;
+    margin: 0;
+    overflow: hidden;
+    border-radius: var(--radius-md);
+}
+
+.role-acting__media-track {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-4);
+}
+
+.role-acting__media-track img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: var(--radius-md);
+}
+
+.role-acting__media:not(.role-acting__media--gallery) img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: var(--radius-md);
+}
+
+.role-acting__experience:nth-child(2) .role-acting__media {
+    aspect-ratio: 732 / 559;
+}
+
+.role-acting__experience:nth-child(3) .role-acting__media {
+    aspect-ratio: 760 / 422;
+}
+
+.role-acting__experience:not(:first-child) .role-acting__media img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.role-acting__list {
+    display: none;
+}
+
+.role-acting__item {
+    border: 1px solid var(--color-border-subtle);
+}
+
+.dungeons-opening {
+    display: grid;
+    grid-template-columns: minmax(0, 36.125rem) minmax(0, 32.5625rem);
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-6);
+}
+
+.dungeons-opening .inovacoes-project__title {
+    order: 1;
+    font-size: 6.8125rem;
+    font-weight: var(--weight-regular);
+    line-height: 1.2;
+    letter-spacing: -0.125rem;
+}
+
+.dungeons-opening__copy {
+    gap: var(--space-4);
+}
+
+.dungeons-opening .tag-list {
+    order: 3;
+    gap: var(--space-2);
+}
+
+.dungeons-opening .tag {
+    padding: 0.375rem 1rem;
+    border: 0;
+    background: var(--color-surface);
+    color: var(--color-text-soft);
+    font: var(--weight-regular) 0.75rem / 1.35 var(--font-interface);
+    letter-spacing: 0.0625rem;
+}
+
+.dungeons-opening__copy>p {
+    order: 2;
+    color: var(--color-text);
+    font-weight: var(--weight-medium);
+    line-height: 1.55;
+}
+
+.dungeons-opening__cover {
+    width: 100%;
+    height: auto;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-card);
+}
+
+.dungeons-challenge {
+    padding-block: 7.5rem;
+}
+
+.dungeons-challenge>.container {
+    display: grid;
+    gap: var(--space-16);
+}
+
+.dungeons-challenge__details {
+    display: grid;
+    gap: var(--space-2);
+}
+
+.dungeons-challenge__details .case-title {
+    font-size: clamp(2.25rem, 7vw, 4.25rem);
+    font-weight: var(--weight-regular);
+    line-height: 1.25;
+    letter-spacing: -0.09375rem;
+}
+
+.dungeons-challenge__intro {
+    max-width: none;
+    color: var(--color-text-soft);
+    font: var(--weight-regular) clamp(1rem, 2.5vw, 1rem) / 1.45 var(--font-body);
+}
+
+.dungeons-challenge__grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: var(--space-6);
+}
+
+.dungeons-challenge__grid article {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: var(--space-2);
+    min-width: 0;
+    min-height: auto;
+    padding: var(--space-8);
+    border-radius: var(--radius-lg);
+}
+
+.dungeons-challenge__grid article::before {
+    position: absolute;
+    top: -16px;
+    left: 35%;
+    display: block;
+    width: 120px;
+    height: 2.75rem;
+    background: center / contain no-repeat url("../assets/images/inovacoes-disruptivas/library-tape-left.png");
+    content: "";
+    pointer-events: none;
+}
+
+.dungeons-challenge__grid article:nth-child(2)::before {
+    width: 120px;
+    height: 2.1875rem;
+    background-image: url("../assets/images/inovacoes-disruptivas/library-tape-top-left.png");
+}
+
+.dungeons-challenge__grid article:nth-child(3)::before {
+    width: 120px;
+    height: 2.1875rem;
+    background-image: url("../assets/images/inovacoes-disruptivas/library-tape-top-right.png");
+}
+
+.dungeons-challenge__number {
+    margin: 0;
+    color: var(--color-accent);
+    font: var(--weight-regular) 4.25rem / 5.3125rem var(--font-display);
+    letter-spacing: -0.09375rem;
+}
+
+.dungeons-challenge__grid h4 {
+    margin: 0;
+    color: var(--color-text);
+    font: var(--weight-medium) 1.5625rem / 1.45 var(--font-body);
+}
+
+.dungeons-challenge__grid article>p:last-child {
+    margin: 0;
+    color: var(--color-text-soft);
+    font: var(--weight-regular) 0.8125rem / 1.55 var(--font-body);
+}
+
+.dungeons-acting {
+    padding-block: 7.5rem;
+}
+
+.dungeons-acting>.container {
+    display: grid;
+    gap: var(--space-16);
+}
+
+.dungeons-acting h3 {
+    margin: 0;
+    font-size: clamp(2.25rem, 7vw, 4.25rem);
+    font-weight: var(--weight-regular);
+    line-height: 1.25;
+    letter-spacing: -0.09375rem;
+}
+
+.dungeons-acting__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-4);
+    margin: 0;
+}
+
+.dungeons-acting__grid li {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+    min-height: 9.0625rem;
+    padding: var(--space-6);
+    overflow: hidden;
+}
+
+.dungeons-acting__grid span {
+    width: var(--space-8);
+    height: var(--space-8);
+    flex: 0 0 var(--space-8);
+    margin: 0;
+    border-radius: var(--radius-pill);
+    background: var(--color-surface-inverse) center / var(--space-4) var(--space-4) no-repeat url("../assets/icons/dungeons-acting-research.svg");
+    color: transparent;
+    font-size: 0;
+}
+
+.dungeons-acting__grid li:nth-child(2) span {
+    background-image: url("../assets/icons/dungeons-acting-strategy.svg");
+}
+
+.dungeons-acting__grid li:nth-child(3) span {
+    background-image: url("../assets/icons/dungeons-acting-prototype.svg");
+}
+
+.dungeons-acting__grid li:nth-child(4) span {
+    background-image: url("../assets/icons/dungeons-acting-interview.svg");
+}
+
+.dungeons-acting__grid p {
+    margin: 0;
+    color: var(--color-text);
+    font: var(--weight-regular) 1.25rem / 1.45 var(--font-body);
+}
+
+.dungeons-feature {
+    padding-block: 0;
+}
+
+.dungeons-feature__grid {
+    position: relative;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 5rem;
+    align-items: start;
+}
+
+.dungeons-feature__copy {
+    display: grid;
+    gap: var(--space-8);
+    min-width: 0;
+}
+
+.dungeons-feature__copy h3 {
+    margin: 0;
+    font-size: 2.625rem;
+    font-weight: var(--weight-regular);
+    line-height: 1.2;
+    letter-spacing: -0.03125rem;
+}
+
+.dungeons-feature__copy ul {
+    display: grid;
+    gap: var(--space-4);
+    margin: 0;
+    padding-left: var(--space-6);
+    color: var(--color-text-soft);
+    font: var(--weight-regular) 1rem / 1.55 var(--font-body);
+}
+
+.dungeons-feature__copy li {
+    padding-left: 0;
+}
+
+.dungeons-feature__main {
+    grid-column: 1 / -1;
+    border: 0;
+}
+
+.dungeons-feature__side {
+    position: absolute;
+    bottom: -6%;
+    right: 0%;
+    width: 33%;
+    margin: 0;
+    border: 0;
+    box-shadow: none;
+}
+
+.dungeons-feature--ranking .dungeons-feature__main {
+    grid-column: 1 / -1;
+}
+
+.dungeons-feature--ranking {
+    margin-top: 21.6875rem;
+}
+
+.dungeons-results {
+    padding-block-start: var(--space-16);
+}
+
+.dungeons-results__grid {
+    display: grid;
+    grid-template-columns: minmax(0, .6fr) minmax(0, 1fr);
+    gap: var(--space-10);
+    align-items: end;
+}
+
+.dungeons-results__grid>div>p {
+    color: var(--color-text-soft);
+}
+
+.dungeons-results__metrics {
+    display: flex;
+    margin: 0;
+    gap: 24px;
+    justify-content: space-between;
+}
+
+.dungeons-results__metrics div {
+    min-width: 0;
+    padding: var(--space-6);
+    text-align: center;
+}
+
+.dungeons-feedback {
+    padding-block-start: var(--space-16);
+}
+
+.dungeons-feedback__grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: var(--space-3);
+}
+
+.dungeons-feedback blockquote {
+    min-width: 0;
+    margin: 0;
+    padding: var(--space-6);
+    color: var(--color-text-soft);
+    font-size: var(--text-sm);
+}
+
+.dungeons-feedback blockquote::before {
+    display: block;
+    margin-bottom: var(--space-4);
+    color: var(--color-text-secondary);
+    content: "✦";
+    font: var(--weight-regular) var(--text-lg) / 1 var(--font-display);
+}
+
+.dungeons-event {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 26.5rem);
+    align-items: center;
+    gap: clamp(var(--space-10), 10vw, var(--space-32));
+    max-width: 57rem;
+    margin: var(--space-16) auto 0;
+}
+
+.dungeons-event>p {
+    color: var(--color-text);
+    font: var(--weight-regular) var(--text-lg) / var(--leading-tight) var(--font-display);
+}
+
+.dungeons-event__image {
+    justify-self: end;
+    width: min(100%, 26.5rem);
+    box-shadow: var(--shadow-card);
+}
+
+@media (max-width: 64rem) {
+
+    .financas-opening,
+    .financas-acting__grid,
+    .role-opening,
+    .role-showcase__grid,
+    .dungeons-opening,
+    .dungeons-results__grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .financas-opening__visual {
+        width: min(100%, 240px);
+        justify-self: center;
+    }
+
+    .financas-acting__visual{
+        display:flex;
+        width: 100%;
+    }
+
+    .financas-acting__visual,
+    .role-opening__cover,
+    .dungeons-opening__cover {
+        justify-self: start;
+    }
+
+    .role-opening__awards {
+        grid-column: auto;
+    }
+
+    .dungeons-feature__grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .dungeons-feature__main,
+    .dungeons-feature__side {
+        grid-column: auto;
+    }
+
+    .dungeons-feature__side {
+        margin-top: 0;
+        top: auto;
+    }
+
+    .dungeons-feature--ranking {
+        margin-top: var(--space-16);
+    }
+
+}
+
+/* Colunas de feedback: cada sentimento e seus comentários compartilham o fluxo. */
+.dungeons-feedback__grid {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: var(--space-6);
+}
+
+.dungeons-feedback__column {
+    display: flex;
+    flex: 1 1 0;
+    flex-direction: column;
+    min-width: 0;
+    max-width: 33.6875rem;
+    gap: var(--space-4);
+}
+
+.dungeons-feedback__column .dungeons-feedback__sentiment {
+    flex: 0 0 auto;
+}
+
+.dungeons-feedback__column blockquote {
+    width: 100%;
+}
+
+@media (max-width: 64rem) {
+    .dungeons-feedback__grid {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .dungeons-feedback__column {
+        width: 100%;
+        padding-bottom: 64px;
+        max-width: none;
+    }
+
+    .inovacoes-results__grid {
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+
+}
+
+@media (max-width: 40rem) {
+    .dungeons-feedback__column blockquote {
+        height: auto;
+        min-height: 9.125rem;
+    }
+
+    .inovacoes-results__value {
+        font: var(--weight-regular) 40px / 48px var(--font-display);
+        letter-spacing: 0;
+    }
+
+
+}
+
+@media (max-width: 56.25rem) {
+
+    .financas-final-product {
+        min-height: 0;
+    }
+
+    .financas-final-product__sticky {
+        position: static;
+        grid-template-columns: minmax(0, 1fr);
+        gap: var(--space-8);
+        min-height: 0;
+    }
+
+    .financas-final-product__viewport {
+        height: auto;
+    }
+
+    .financas-final-product__track {
+        transform: none;
+        will-change: auto;
+    }
+
+    .financas-final-product__media {
+        height: 380px;
+        aspect-ratio: 562 / 364;
+    }
+
+    .role-acting>.container>h3 {
+        margin-bottom: var(--space-8);
+    }
+
+    .role-acting__experience {
+        grid-template-columns: minmax(0, 1fr);
+        gap: var(--space-6);
+    }
+
+    .role-acting__card {
+        width: 100%;
+    }
+
+    .role-brief__column:first-child .role-brief__image {
+        position: absolute;
+        left: 0%;
+        margin: 0;
+        right: 0px;
+        top: -90px;
+    }
+
+    .role-brief__column:last-child .role-brief__image {
+        position: absolute;
+        left: 63%;
+        margin: 0;
+        padding: 0 16px;
+        top: auto;
+        bottom: -30%;
+        z-index: 2;
+    }
+
+
+    .inovacoes-events {
+        min-height: 0;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: var(--space-4);
+        padding: var(--space-16) var(--space-6);
+        overflow-x: clip;
+        overflow-y: visible;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .inovacoes-events__statement {
+        grid-column: 1 / -1;
+        width: min(42.125rem, 100%);
+
+    }
+
+    .inovacoes-events__photo {
+        position: relative;
+        inset: auto;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        overflow: visible;
+        aspect-ratio: auto;
+
+    }
+
+    .inovacoes-events__photo img {
+
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .inovacoes-events__arrow {
+        position: relative;
+        bottom: auto;
+        left: auto;
+        grid-column: 1 / -1;
+        z-index: 2;
+        justify-self: center;
+        transform: rotate(180deg);
+    }
+
+    .inovacoes-lab__logos-carousel {
+        width: calc(100% + var(--space-12));
+        margin-inline: calc(var(--space-6) * -1);
+    }
+
+    .inovacoes-lab__logos-track {
+        display: flex;
+        width: max-content;
+        animation: inovacoes-lab-logos-scroll 36s linear infinite;
+        will-change: transform;
+    }
+
+    .inovacoes-lab__logos {
+        flex: 0 0 clamp(42rem, 180vw, 56rem);
+        width: clamp(42rem, 180vw, 56rem);
+        max-width: none;
+    }
+
+    .inovacoes-lab__logos--duplicate {
+        display: block;
+    }
+
+    .inovacoes-lab__intro {
+        flex-direction: column;
+        align-items: start;
+        gap: var(--space-3);
+    }
+
+    .inovacoes-lab__mark {
+        width: 80px;
+        height: auto;
+    }
+
+    .inovacoes-lab__intro>div {
+        min-width: 0;
+    }
+
+    .role-brief__intro,
+    .role-brief__grid,
+    .dungeons-event {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .dungeons-event__image {
+        justify-self: start;
+    }
+
+    .financas-process__layout {
+        grid-template-areas:
+            "arrow"
+            "person"
+            "collage";
+        grid-template-columns: minmax(0, 1fr);
+        row-gap: var(--space-10);
+    }
+
+    .financas-process__arrow {
+        width: clamp(4rem, 80px, 8.6684rem);
+        margin: 0;
+        top: 50%;
+        left: 5%;
+    }
+
+    .financas-process__person,
+    .financas-process__collage {
+        justify-self: center;
+    }
+
+    .dungeons-acting__grid,
+    .dungeons-challenge__grid,
+    .dungeons-feedback__grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@keyframes inovacoes-lab-logos-scroll {
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width: 56.25rem) and (prefers-reduced-motion: reduce) {
+    .inovacoes-lab__logos-carousel {
+        width: 100%;
+        margin-inline: 0;
+        overflow: visible;
+    }
+
+    .inovacoes-lab__logos-track {
+        display: block;
+        width: 100%;
+        animation: none;
+        transform: none;
+        will-change: auto;
+    }
+
+    .inovacoes-lab__logos {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .inovacoes-lab__logos--duplicate {
+        display: none;
+    }
+}
+
+@media (max-width: 56.25rem) and (hover: hover) and (pointer: fine) {
+    .inovacoes-lab__logos-carousel:hover .inovacoes-lab__logos-track {
+        animation-play-state: paused;
+    }
+}
+
+@media (min-width: 56.3125rem) and (max-width: 64rem) {
+    .inovacoes-results__grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 40rem) {
+
+    .role-brief__column:last-child .role-brief__image{
+        bottom: -20%;
+        left: 55%;
+    }
+
+    .role-opening__awards li{
+        width: 100%;
+    }
+
+    .role-acting__media-track {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .dungeons-opening .inovacoes-project__title {
+        font-size: clamp(3.25rem, 14vw, 6.8125rem);
+    }
+
+    .role-acting__card p {
+        font-size: clamp(1.25rem, 6vw, 1.5625rem);
+    }
+
+    .role-opening .inovacoes-project__title {
+        font-size: clamp(3rem, 15vw, 6.8125rem);
+    }
+
+    .role-opening__cover {
+        height: auto;
+    }
+
+    .role-opening__awards {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .inovacoes-results__title {
+        gap: var(--space-2);
+        font-size: clamp(1.5rem, 8vw, 2.625rem);
+    }
+
+    .inovacoes-results__star--left {
+        width: 2rem;
+        height: 1.75rem;
+    }
+
+    .inovacoes-results__star--right {
+        width: 2.125rem;
+        height: 2.0625rem;
+    }
+
+    .inovacoes-results__grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .inovacoes-events {
+        grid-template-columns: minmax(0, 1fr);
+        padding-block: var(--space-12);
+    }
+
+    .inovacoes-events__statement {
+        font-size: clamp(1.8rem, 10vw, 1.25rem);
+    }
+
+    .inovacoes-events__photo+.inovacoes-events__photo {
+        margin-block-start: calc(var(--space-6) * -1);
+    }
+
+    .inovacoes-lab,
+    .inovacoes-results,
+    .inovacoes-project__opening,
+    .financas-acting,
+    .financas-process,
+    .role-showcase,
+    .role-brief,
+    .role-acting,
+    .dungeons-challenge,
+    .dungeons-acting,
+    .dungeons-feature,
+    .dungeons-results,
+    .dungeons-feedback {
+        padding-block-start: var(--space-12);
+        padding-block-end: var(--space-12);
+    }
+
+    .role-opening__awards {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .financas-opening__visual {
+        width: min(100%, 28.4826rem);
+    }
+
+    .financas-carousel__scroller {
+        gap: var(--space-6);
+    }
+
+    .financas-carousel__item+.financas-carousel__item {
+        margin-inline-start: calc(var(--space-4) * -1);
+    }
+
+    .financas-acting__steps,
+    .dungeons-acting__grid,
+    .dungeons-challenge__grid,
+    .dungeons-feedback__grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .financas-acting__visual {
+        width: 100%;
+        display: flex;
+        min-height: 0;
+        justify-self: center;
+        gap: var(--space-4);
+    }
+
+    .financas-carousel{
+        margin:-120px 0px;
+    }
+
+    .role-brief__column {
+        padding: var(--space-6);
+    }
+
+    .dungeons-event {
+        gap: var(--space-6);
+        margin-top: var(--space-10);
+    }
+}
+
+/* Node 3833:781 — resultados, feedbacks e evento. */
+.dungeons-results {
+    padding-top: 80px;
+}
+
+.dungeons-results__grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: var(--space-16);
+    align-items: start;
+}
+
+.dungeons-results__grid>div {
+    display: grid;
+    gap: var(--space-2);
+    margin-bottom: var(--space-10);
+}
+
+.dungeons-results__grid>div>h3 {
+    margin: 0;
+    font-size: 4.25rem;
+    font-weight: var(--weight-regular);
+    line-height: 5.3125rem;
+    letter-spacing: -0.09375rem;
+}
+
+.dungeons-results__grid>div>p {
+    margin: 0;
+    color: var(--color-text-soft);
+    font: var(--weight-regular) 1rem / 1.55 var(--font-body);
+}
+
+.dungeons-results__metrics-title,
+.dungeons-feedback>.container>h3 {
+    margin: 0;
+    font-size: 2.625rem;
+    font-weight: var(--weight-regular);
+    line-height: 1.2;
+    letter-spacing: -0.03125rem;
+}
+
+.dungeons-results__metrics div {
+    width: 33%;
+    max-width: 320px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    gap: var(--space-8);
+    padding: 24px;
+    border-radius: var(--radius-lg);
+}
+
+
+
+.dungeons-results__metrics div:nth-child(2)::before {
+    background-image: url("../assets/icons/dungeons-result-tasks.svg");
+}
+
+.dungeons-results__metrics div:nth-child(3)::before {
+    background-image: url("../assets/icons/dungeons-result-hours.svg");
+}
+
+.dungeons-results__metrics dt,
+.dungeons-results__metrics dd {
+    margin: 0;
+}
+
+.dungeons-results__metrics dt {
+    color: var(--color-text);
+    font: var(--weight-regular) 4.25rem / 5.3125rem var(--font-display);
+    letter-spacing: -0.09375rem;
+}
+
+.dungeons-results__metrics dd {
+    color: var(--color-text-soft);
+    font: var(--weight-bold) 1rem / 1 var(--font-interface);
+    letter-spacing: 0.05rem;
+    text-transform: uppercase;
+}
+
+.dungeons-feedback {
+    padding-block: 80px;
+}
+
+.dungeons-feedback>.container>h3 {
+    margin-bottom: var(--space-16);
+}
+
+.dungeons-feedback__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: 7rem repeat(3, minmax(0, 1fr));
+    column-gap: var(--space-12);
+    row-gap: var(--space-4);
+}
+
+.dungeons-feedback__grid::before,
+.dungeons-feedback__grid::after {
+    align-self: center;
+    justify-self: center;
+    width: 7rem;
+    height: 7rem;
+    border-radius: var(--radius-pill);
+    background: var(--color-surface-inverse) center / 4rem 4rem no-repeat url("../assets/icons/dungeons-feedback-positive.svg");
+    content: "";
+}
+
+.dungeons-feedback__grid::after {
+    background-image: url("../assets/icons/dungeons-feedback-neutral.svg");
+}
+
+.dungeons-feedback blockquote {
+    display: grid;
+    align-content: start;
+    gap: var(--space-2);
+    padding: var(--space-6);
+    padding-block-end: var(--space-4);
+    color: var(--color-text);
+    font: var(--weight-regular) 1.25rem / 1.45 var(--font-body);
+}
+
+.dungeons-feedback blockquote::before {
+    display: block;
+    width: var(--space-8);
+    height: var(--space-8);
+    margin: 0;
+    border-radius: var(--radius-pill);
+    background: var(--color-surface-inverse) center / var(--space-4) var(--space-4) no-repeat url("../assets/icons/dungeons-feedback-welcome.svg");
+    content: "";
+}
+
+.dungeons-feedback blockquote.dungeons-feedback__card--usability::before {
+    background-image: url("../assets/icons/dungeons-feedback-usability.svg");
+}
+
+.dungeons-feedback blockquote.dungeons-feedback__card--engagement::before {
+    background-image: url("../assets/icons/dungeons-feedback-engagement.svg");
+}
+
+.dungeons-feedback blockquote.dungeons-feedback__card--specificity::before {
+    background-image: url("../assets/icons/dungeons-feedback-specificity.svg");
+}
+
+.dungeons-feedback blockquote.dungeons-feedback__card--ranking::before {
+    background-image: url("../assets/icons/dungeons-feedback-ranking.svg");
+    transform: rotate(15deg);
+}
+
+.dungeons-feedback blockquote.dungeons-feedback__card--practice::before {
+    background-image: url("../assets/icons/dungeons-feedback-practice.svg");
+}
+
+.dungeons-event {
+    grid-template-columns: minmax(0, 35.25rem) minmax(0, 26.5rem);
+    justify-content: center;
+    gap: var(--space-20);
+    max-width: none;
+    margin: 2.6875rem auto 0;
+}
+
+.dungeons-event>p {
+    display: grid;
+    gap: var(--space-8);
+    margin: 0;
+    color: var(--color-text);
+    font: var(--weight-regular) 2.625rem / 1.2 var(--font-display);
+    letter-spacing: -0.03125rem;
+}
+
+.dungeons-event>p::before {
+    display: block;
+    width: 4.125rem;
+    height: 3.875rem;
+    background: center / contain no-repeat url("../assets/images/inovacoes-disruptivas/dungeons-event-quote.png");
+    content: "";
+}
+
+.dungeons-event__image {
+    width: 26.5rem;
+    box-shadow: none;
+}
+
+@media (max-width: 64rem) {
+    .dungeons-results__metrics {
+        width: 100%;
+    }
+
+    .dungeons-feedback__grid {
+        grid-template-columns: minmax(0, 1fr);
+        grid-template-rows: repeat(2, 7rem) repeat(6, minmax(0, 1fr));
+    }
+
+    .dungeons-event {
+        grid-template-columns: minmax(0, 1fr);
+        justify-content: start;
+    }
+
+    .dungeons-event__image {
+        justify-self: start;
+    }
+}
+
+@media (max-width: 40rem) {
+    .dungeons-results__grid>div>h3 {
+        font-size: clamp(2.75rem, 13vw, 4.25rem);
+        line-height: var(--leading-tight);
+    }
+
+    .dungeons-results__metrics-title,
+    .dungeons-feedback>.container>h3,
+    .dungeons-event>p {
+        font-size: clamp(2rem, 10vw, 2.625rem);
+    }
+
+    .dungeons-results__metrics {
+        flex-wrap: wrap;
+    }
+
+    .dungeons-results__metrics div {
+        flex: 0 0 100%;
+        flex-direction: column;
+        align-items: center;
+        padding: var(--space-8);
+        width: 100%;
+        max-width: none;
+    }
+
+    .dungeons-event__image {
+        width: 100%;
+    }
+}
+
+/* Consolidação semântica dos ícones e espaçamentos de Dungeons & Data. */
+.dungeons-acting__grid .icon-badge {
+    --icon-badge-size: var(--space-8);
+    --icon-badge-content-size: var(--space-4);
+    display: grid;
+    place-items: center;
+    margin: 0;
+    background-color: var(--color-surface-inverse);
+    background-image: none;
+    background-repeat: no-repeat;
+    color: inherit;
+    font-size: inherit;
+}
+
+.dungeons-acting__grid .icon-badge>img {
+    width: var(--icon-badge-content-size);
+    height: var(--icon-badge-content-size);
+}
+
+.dungeons-results__grid>div {
+    margin-bottom: 3.5rem;
+}
+
+.dungeons-results__metrics div {
+    display: flex;
+    gap: 0;
+    align-content: center;
+    justify-content: center;
+}
+
+.dungeons-results__metrics div::before {
+    display: none;
+}
+
+.dungeons-results__metrics .dungeons-results__icon {
+    --icon-badge-size: 7rem;
+    --icon-badge-content-size: 4rem;
+    margin-bottom: var(--space-8);
+}
+
+
+.dungeons-event__image {
+    height: 37.5rem;
+    overflow: hidden;
+    border-radius: 0;
+}
+
+.dungeons-event__image img {
+    position: relative;
+    width: 60%;
+    max-width: none;
+    object-fit: cover;
+}
+
+@media (max-width: 40rem) {
+    .dungeons-event__image {
+        height: auto;
+        aspect-ratio: 424 / 600;
+    }
+}
+
+/* Node 3572:2237 — dois agrupamentos verticais de feedback. */
+.dungeons-feedback__grid {
+    grid-template-columns: repeat(2, minmax(0, 33.6875rem));
+    grid-template-rows: 3rem repeat(3, 9.125rem);
+    justify-content: center;
+    column-gap: var(--space-6);
+    row-gap: var(--space-4);
+}
+
+.dungeons-feedback blockquote {
+    height: auto;
+}
+
+.dungeons-feedback__grid::before {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.dungeons-feedback__grid::after {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.dungeons-feedback blockquote:nth-of-type(1),
+.dungeons-feedback blockquote:nth-of-type(3),
+.dungeons-feedback blockquote:nth-of-type(5) {
+    grid-column: 1;
+}
+
+.dungeons-feedback blockquote:nth-of-type(2),
+.dungeons-feedback blockquote:nth-of-type(4),
+.dungeons-feedback blockquote:nth-of-type(6) {
+    grid-column: 2;
+}
+
+.dungeons-feedback blockquote:nth-of-type(1),
+.dungeons-feedback blockquote:nth-of-type(2) {
+    grid-row: 2;
+}
+
+.dungeons-feedback blockquote:nth-of-type(3),
+.dungeons-feedback blockquote:nth-of-type(4) {
+    grid-row: 3;
+}
+
+.dungeons-feedback blockquote:nth-of-type(5),
+.dungeons-feedback blockquote:nth-of-type(6) {
+    grid-row: 4;
+}
+
+.dungeons-feedback__grid::before,
+.dungeons-feedback__grid::after {
+    display: none;
+}
+
+.dungeons-feedback__sentiment {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2rem;
+    gap: var(--space-3);
+
+}
+
+.dungeons-feedback__sentiment .icon-badge {
+    --icon-badge-size: 3rem;
+    --icon-badge-content-size: var(--space-8);
+}
+
+.dungeons-feedback__sentiment h4 {
+    margin: 0;
+    color: var(--color-text);
+    font: var(--weight-regular) 1.5625rem / 1.2 var(--font-display);
+    letter-spacing: -0.03125rem;
+}
+
+@media (max-width: 64rem) {
+    .dungeons-feedback__grid {
+        grid-template-columns: minmax(0, 1fr);
+        grid-template-rows: 2rem repeat(3, 9.125rem) 2rem repeat(3, 9.125rem);
+    }
+
+    .dungeons-feedback blockquote:nth-of-type(1) {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .dungeons-feedback blockquote:nth-of-type(3) {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    .dungeons-feedback blockquote:nth-of-type(5) {
+        grid-column: 1;
+        grid-row: 4;
+    }
+
+    .dungeons-feedback blockquote:nth-of-type(2) {
+        grid-column: 1;
+        grid-row: 6;
+    }
+
+    .dungeons-feedback blockquote:nth-of-type(4) {
+        grid-column: 1;
+        grid-row: 7;
+    }
+
+    .dungeons-feedback blockquote:nth-of-type(6) {
+        grid-column: 1;
+        grid-row: 8;
+    }
+}
