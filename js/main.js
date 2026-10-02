@@ -49,10 +49,25 @@ if (homeAnimationTargets.length) {
 
 const menuToggle = document.querySelector(".menu-toggle");
 const siteNav = document.querySelector(".site-nav");
+const setMenuOpen = (open, { returnFocus = false } = {}) => {
+  if (!menuToggle) return;
+  menuToggle.setAttribute("aria-expanded", String(open));
+  siteNav?.classList.toggle("is-open", open);
+  if (returnFocus) menuToggle.focus({ preventScroll: true });
+};
+
 menuToggle?.addEventListener("click", () => {
-  const open = menuToggle.getAttribute("aria-expanded") === "true";
-  menuToggle.setAttribute("aria-expanded", String(!open));
-  siteNav?.classList.toggle("is-open", !open);
+  setMenuOpen(menuToggle.getAttribute("aria-expanded") !== "true");
+});
+
+siteNav?.addEventListener("click", (event) => {
+  if (event.target.closest("a")) setMenuOpen(false, { returnFocus: true });
+});
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape" && menuToggle?.getAttribute("aria-expanded") === "true") {
+    setMenuOpen(false, { returnFocus: true });
+  }
 });
 
 const localTime = document.querySelector("[data-local-time]");

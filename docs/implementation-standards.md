@@ -47,6 +47,8 @@ por Inovações Disruptivas e Web Design, cujos frames Figma usam capa de
 
 Crie ou estenda um componente global somente se houver uma semântica estável e reutilização real ou claramente prevista em dois ou mais contextos. Crie um token apenas se o valor representar uma decisão visual repetida, como uma cor de superfície ou um raio de card.
 
+Ao remover uma regra ou token sem consumidor, confirme a ausência de referências em HTML, CSS e JavaScript e valide os viewports suportados antes de excluir os assets associados. Não preserve tokens globais sem uso para um futuro hipotético.
+
 Mantenha no CSS da página: crops e `object-position`, proporções excepcionais, imagens e ilustrações, gradientes e overlays editoriais, posições decorativas, altura de uma composição e correções de breakpoint exclusivas. Esses valores descrevem o case, não uma biblioteca.
 
 Evite classes utilitárias vagas, seletores globais que afetem todos os elementos de uma tag e aliases para APIs removidas. Ao migrar uma classe, atualize HTML e CSS no mesmo trabalho e remova a versão legada.
@@ -79,6 +81,13 @@ tem uso estável em um segundo contexto.
 - Para faixas horizontais arrastáveis, mantenha o scroll no próprio componente (`overflow-x: auto`), preserve o contêiner externo dentro da viewport e use `overscroll-behavior-inline: contain` e `touch-action: pan-x`. Nunca esconda esse conteúdo em um ancestral.
 - Imagens de conteúdo têm `alt` adequado, `width` e `height` conhecidos e `loading="lazy"` fora do hero. Preserve `prefers-reduced-motion`.
 - Não incluir dependências, JavaScript, assets ou animações sem necessidade comprovada.
+
+## Unidades CSS
+
+- Use `rem` para `font-size` e tokens de tamanho tipografico.
+- Use `line-height` sem unidade quando a entrelinha for proporcional e `em` para `letter-spacing`.
+- Use `px` para espacamentos, dimensoes, bordas, raios, sombras, offsets, icones e decoracao.
+- Preserve unidades semanticas existentes, como `%`, `vw`, `vh`, `fr`, `deg`, `s` e `ms`; breakpoints nao fazem parte desta convencao.
 
 ## Checklist de entrega
 

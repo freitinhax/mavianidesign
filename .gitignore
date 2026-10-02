@@ -2,6 +2,7 @@
 node_modules/
 dist/
 .cache/
+docs/
 
 # Arquivos gerados pelo sistema/editor
 .DS_Store

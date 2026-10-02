@@ -7,18 +7,18 @@
 
 
 .web-design-projects {
-    padding: 10.5625rem 0 11.25rem;
+    padding: 169px 0 180px;
 }
 
 .web-design-projects>.container,
 .web-design-clients>.container {
     display: grid;
-    gap: 7.5rem;
+    gap: 120px;
 }
 
 .web-design-projects__list {
     display: grid;
-    gap: 15rem;
+    gap: 240px;
     min-width: 0;
 }
 
@@ -26,46 +26,46 @@
     position: relative;
     min-width: 0;
     isolation: isolate;
-    --web-design-preview-height: 59.375rem;
-    --web-design-device-width: 22rem;
-    --web-design-title-line-height: 6.25rem;
+    --web-design-preview-height: 950px;
+    --web-design-device-width: 352px;
+    --web-design-title-line-height: 1.4705882353;
 }
 
 .web-design-project--spaces,
 .web-design-project--meira-moraes {
-    --web-design-preview-height: 50rem;
+    --web-design-preview-height: 800px;
 }
 
 .web-design-project--spaces {
-    --web-design-device-width: 19.625rem;
+    --web-design-device-width: 314px;
 }
 
 .web-design-project--meira-moraes {
-    --web-design-device-width: 20.6875rem;
+    --web-design-device-width: 331px;
 }
 
 .web-design-project--websellers {
-    --web-design-device-width: 22.4375rem;
+    --web-design-device-width: 359px;
 }
 
 .web-design-project--time {
-    --web-design-preview-height: 59.6875rem;
-    --web-design-device-width: 21.0625rem;
+    --web-design-preview-height: 955px;
+    --web-design-device-width: 337px;
 }
 
 .web-design-project--born {
-    --web-design-device-width: 22.6875rem;
+    --web-design-device-width: 363px;
 }
 
 .web-design-project--center-air {
-    --web-design-device-width: 22.4375rem;
+    --web-design-device-width: 359px;
 }
 
 .web-design-project__title {
     margin-bottom: var(--space-16);
     color: var(--color-text);
     font: var(--weight-regular) 4.25rem / var(--web-design-title-line-height) var(--font-display);
-    letter-spacing: var(--tracking-tight);
+    letter-spacing: -0.0220588235em;
     overflow-wrap: anywhere;
 }
 
@@ -105,7 +105,7 @@
 }
 
 .web-design-project__scroller::-webkit-scrollbar {
-    width: 0.875rem;
+    width: 14px;
 }
 
 .web-design-project__scroller::-webkit-scrollbar-track {
@@ -114,15 +114,15 @@
 }
 
 .web-design-project__scroller::-webkit-scrollbar-thumb {
-    min-height: 3rem;
-    border: 0.1875rem solid var(--color-surface-float);
+    min-height: 48px;
+    border: 3px solid var(--color-surface-float);
     border-radius: var(--radius-pill);
     background: var(--color-accent);
 }
 
 .web-design-project__scroller:focus-visible {
     outline: 0;
-    box-shadow: inset 0 0 0 0.1875rem var(--color-text-secondary);
+    box-shadow: inset 0 0 0 3px var(--color-text-secondary);
 }
 
 .web-design-project__screenshot {
@@ -143,7 +143,7 @@
 
 .web-design-project__meta {
     display: grid;
-    gap: 0.4375rem;
+    gap: 7px;
     margin: 0;
 }
 
@@ -164,7 +164,7 @@
 .web-design-project__meta dt {
     color: var(--color-text-secondary);
     font: var(--weight-bold) var(--text-label) / 1.5 var(--font-interface);
-    letter-spacing: var(--tracking-label);
+    letter-spacing: 0.1em;
     text-transform: uppercase;
 }
 
@@ -188,9 +188,9 @@
 
 .web-design-project__swatch {
     display: block;
-    width: 3rem;
-    height: 3rem;
-    flex: 0 0 3rem;
+    width: 48px;
+    height: 48px;
+    flex: 0 0 48px;
     border: 1px solid var(--color-border-subtle);
     border-radius: var(--radius-pill);
     background: var(--web-design-swatch-color, var(--color-surface));
@@ -198,7 +198,7 @@
 }
 
 .web-design-project__swatch+.web-design-project__swatch {
-    margin-left: -1rem;
+    margin-left: -16px;
 }
 
 .web-design-project--spaces .web-design-project__swatch:nth-child(1) {
@@ -352,12 +352,12 @@
 }
 
 .web-design-project--spaces .web-design-project__tape--top {
-    width: 2.292rem;
+    width: 36.672px;
     transform: rotate(60deg);
 }
 
 .web-design-project--spaces .web-design-project__tape--bottom {
-    width: 2rem;
+    width: 32px;
     transform: rotate(-135deg);
 }
 
@@ -376,12 +376,12 @@
 }
 
 .web-design-project--meira-moraes .web-design-project__tape--top {
-    width: 5.714rem;
+    width: 91.424px;
     transform: rotate(-43.83deg);
 }
 
 .web-design-project--meira-moraes .web-design-project__tape--bottom {
-    width: 2.439rem;
+    width: 39.024px;
     transform: rotate(-116.82deg);
 }
 
@@ -400,12 +400,12 @@
 }
 
 .web-design-project--websellers .web-design-project__tape--top {
-    width: 7.125rem;
+    width: 114px;
     transform: rotate(30deg);
 }
 
 .web-design-project--websellers .web-design-project__tape--bottom {
-    width: 5.878rem;
+    width: 94.048px;
     transform: rotate(0deg);
 }
 
@@ -424,12 +424,12 @@
 }
 
 .web-design-project--time .web-design-project__tape--primary {
-    width: 7.1875rem;
+    width: 115px;
     transform: rotate(-30deg);
 }
 
 .web-design-project--time .web-design-project__tape--secondary {
-    width: 4.25rem;
+    width: 68px;
     transform: rotate(-30deg);
 }
 
@@ -448,12 +448,12 @@
 }
 
 .web-design-project--born .web-design-project__tape--primary {
-    width: 2.375rem;
+    width: 38px;
     transform: rotate(150deg);
 }
 
 .web-design-project--born .web-design-project__tape--secondary {
-    width: 7.9375rem;
+    width: 127px;
     transform: rotate(45deg);
 }
 
@@ -472,12 +472,12 @@
 }
 
 .web-design-project--center-air .web-design-project__tape--top {
-    width: 4.963rem;
+    width: 79.408px;
     transform: rotate(-32.7deg);
 }
 
 .web-design-project--center-air .web-design-project__tape--bottom {
-    width: 4.613rem;
+    width: 73.808px;
     transform: rotate(-94.37deg);
 }
 
@@ -487,7 +487,7 @@
 
 .web-design-clients__client-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, 8.5rem), 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 136px), 1fr));
     align-items: center;
     gap: var(--space-16) var(--space-8);
     min-width: 0;
@@ -499,7 +499,7 @@
 .web-design-clients__client {
     display: grid;
     min-width: 0;
-    min-height: 5.5rem;
+    min-height: 88px;
     place-items: center;
 }
 
@@ -519,7 +519,7 @@
 
 @media (max-width: 64rem) {
     .web-design-hero::before {
-        left: -58rem;
+        left: -928px;
     }
 
     .web-design-projects>.container,
@@ -528,7 +528,7 @@
     }
 
     .web-design-projects__list {
-        gap: 7.5rem;
+        gap: 120px;
     }
 
     .web-design-project__body {
@@ -575,13 +575,13 @@
 
 @media (max-width: 40rem) {
     .web-design-hero::before {
-        top: -42rem;
-        left: -70rem;
+        top: -672px;
+        left: -1120px;
     }
 
     .web-design-hero::after {
-        top: -25rem;
-        left: -46rem;
+        top: -400px;
+        left: -736px;
     }
 
     .web-design-projects {
@@ -608,11 +608,11 @@
     }
 
     .web-design-project__visual {
-        height: clamp(26rem, 135vw, 38rem);
+        height: clamp(416px, 135vw, 608px);
     }
 
     .web-design-project__scroller::-webkit-scrollbar {
-        width: 0.75rem;
+        width: 12px;
     }
 
     .web-design-project__details {
@@ -635,13 +635,13 @@
     }
 
     .web-design-project__swatch {
-        width: 3.5rem;
-        height: 3.5rem;
-        flex-basis: 3.5rem;
+        width: 56px;
+        height: 56px;
+        flex-basis: 56px;
     }
 
     .web-design-project__device {
-        width: min(100%, 20rem);
+        width: min(100%, 320px);
         justify-self: center;
         transform: none;
     }
@@ -651,12 +651,12 @@
     }
 
     .web-design-clients__client-list {
-        grid-template-columns: repeat(auto-fit, minmax(min(100%, 7.5rem), 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(min(100%, 120px), 1fr));
         gap: var(--space-10) var(--space-4);
     }
 
     .web-design-clients__client {
-        min-height: 4.5rem;
+        min-height: 72px;
     }
 
 

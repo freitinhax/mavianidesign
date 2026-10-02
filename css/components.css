@@ -1,11 +1,12 @@
 .case-title {
     color: var(--color-text);
-    letter-spacing: var(--tracking-tight);
+    letter-spacing: -0.0220588235em;
 }
 
 .case-title--hero {
     font-size: 4.25rem;
-    line-height: 5.3125rem;
+    line-height: 1.25;
+    letter-spacing: -0.0220588235em;
 }
 
 .case-cover {
@@ -20,7 +21,7 @@
     position: relative;
     z-index: 1;
     display: grid;
-    grid-template-columns: minmax(0, 34.375rem) minmax(0, 28.125rem);
+    grid-template-columns: minmax(0, 550px) minmax(0, 450px);
     align-items: start;
     justify-content: space-between;
     gap: var(--space-16);
@@ -67,12 +68,12 @@
 .eyebrow {
     color: var(--color-text-secondary);
     font: var(--weight-bold) var(--text-label) / var(--leading-ui) var(--font-interface);
-    letter-spacing: var(--tracking-label);
+    letter-spacing: 0.1em;
     text-transform: uppercase;
 }
 
 .case-cover__meta dd {
-    max-width: 20rem;
+    max-width: 320px;
     margin: 0;
     color: var(--color-text);
     font: var(--weight-regular) 1rem / var(--leading-body) var(--font-body);
@@ -87,12 +88,12 @@
 .case-title--subsection {
     font-size: var(--text-case-subtitle);
     line-height: var(--leading-tight);
-    letter-spacing: -0.03125rem;
+    letter-spacing: -0.014em;
 }
 
 .notice {
     margin: 24px auto;
-    width: min(51.875rem, calc(100% - 3rem));
+    width: min(830px, calc(100% - 48px));
     display: grid;
     gap: var(--space-2);
     padding: var(--space-2);
@@ -136,8 +137,8 @@
     top: 16px;
     left: 16px;
     display: flex;
-    width: 3.25rem;
-    height: 2.375rem;
+    width: 52px;
+    height: 38px;
     place-items: center;
     padding: var(--space-2) var(--space-3);
     border: 1px solid var(--color-accent);
@@ -190,12 +191,12 @@
 }
 
 .icon-badge--lg {
-    --icon-badge-size: 6rem;
+    --icon-badge-size: 96px;
     --icon-badge-content-size: var(--space-12);
 }
 
 .icon-badge--xl {
-    --icon-badge-size: 7rem;
+    --icon-badge-size: 112px;
     --icon-badge-content-size: var(--space-16);
 }
 
@@ -213,7 +214,7 @@
     border-radius: 20px;
     background: var(--color-surface);
     color: var(--color-text-muted);
-    font: 600 12px/1 var(--font-interface);
+    font: 600 0.75rem/1 var(--font-interface);
     white-space: nowrap
 }
 
@@ -226,8 +227,8 @@
     border: 1px solid var(--color-accent);
     border-radius: 99px;
     color: var(--color-text-secondary);
-    font: 700 12px/1 var(--font-interface);
-    letter-spacing: .6px;
+    font: 700 0.75rem/1 var(--font-interface);
+    letter-spacing: 0.05em;
     text-decoration: none;
     text-transform: uppercase;
     transition: color var(--duration-fast) ease, background-color var(--duration-fast) ease;
@@ -272,7 +273,7 @@
     align-items: center;
     gap: 8px;
     color: var(--color-text);
-    font: 16px/1.35 var(--font-display);
+    font: 1rem/1.35 var(--font-display);
     text-decoration: none
 }
 
@@ -288,7 +289,7 @@
 
 .site-nav a {
     color: var(--color-text-muted);
-    font: 16px/1.35 var(--font-interface);
+    font: 1rem/1.35 var(--font-interface);
     text-decoration: none
 }
 
@@ -323,7 +324,7 @@
 }
 
 .contact-main p {
-    font-size: 25px
+    font-size: 1.5625rem
 }
 
 .contact-main {
@@ -352,7 +353,7 @@
     border: 1px solid var(--color-text);
     border-radius: 99px;
     color: var(--color-text);
-    font: 16px/1.35 var(--font-display);
+    font: 1rem/1.35 var(--font-display);
     text-decoration: none
 }
 
@@ -385,7 +386,7 @@
 
 .time-info b {
     color: var(--color-border);
-    font: 500 16px/1 var(--font-mono)
+    font: 500 1rem/1 var(--font-mono)
 }
 
 .time-info__separator {
@@ -400,7 +401,7 @@
 }
 
 .time-info span {
-    font: 500 12px/1 var(--font-interface)
+    font: 500 0.75rem/1 var(--font-interface)
 }
 
 @media (max-width: 64rem) {
@@ -432,7 +433,7 @@
     }
 
     .case-title--hero {
-        font-size: var(--text-case-title);
+        font-size: 4rem;
         line-height: var(--leading-tight);
     }
 

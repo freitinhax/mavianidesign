@@ -48,20 +48,36 @@
 }
 
 .home-hero__layout {
-    min-height: 32.5rem;
+    min-height: 520px;
     position: relative;
     padding: 160px 0;
 }
 
+.home_hero__logo_bg{
+    opacity: 0.1;
+    position: absolute;
+    width: 32%;
+    min-width: 320px;
+    height: auto;
+    z-index: 0;
+    top: 16px;
+    left: 16px;
+}
+
+.home_hero__logo_bg img {
+    width: 100%;
+    height: auto;
+}
+
 .home-hero__intro {
-    width: min(100%, 50.019rem);
+    width: min(100%, 800.304px);
 }
 
 .home-hero__title,
 .home-designologist__copy h2 {
     color: var(--color-text-secondary);
-    font: var(--weight-regular) 80px / var(--leading-tight) var(--font-display);
-    letter-spacing: var(--tracking-tight);
+    font: var(--weight-regular) 5rem / var(--leading-tight) var(--font-display);
+    letter-spacing: -0.01875em;
 }
 
 .home-hero__title {
@@ -112,12 +128,12 @@
 .home-hero__copy {
     display: grid;
     gap: var(--space-2);
-    margin-top: var(--space-3);
+    margin-top: var(--space-6);
     min-width: 0;
 }
 
 .home-hero__copy p:first-child {
-    font-size: 14px;
+    font-size: 0.875rem;
     line-height: 1.45;
 }
 
@@ -137,9 +153,9 @@
 
 .home-hero__arrow {
     position: absolute;
-    top: 30rem;
-    left: 22rem;
-    width: 11rem;
+    top: 480px;
+    left: 352px;
+    width: 176px;
     max-width: none;
     height: auto;
     pointer-events: none;
@@ -147,14 +163,14 @@
 }
 
 .home-designologist {
-    padding-block: 0 8rem;
+    padding-block: 0 128px;
 }
 
 .home-designologist__definition {
     display: grid;
-    grid-template-columns: minmax(0, 44.438rem) minmax(17.5rem, 1fr);
-    gap: 5rem;
-    min-height: 31.75rem;
+    grid-template-columns: minmax(0, 711.008px) minmax(280px, 1fr);
+    gap: 80px;
+    min-height: 508px;
     padding: var(--space-2);
 }
 
@@ -174,9 +190,9 @@
 
 .home-designologist__copy ol {
     display: grid;
-    gap: 0;
+    gap: 16px;
     margin: var(--space-6) 0 0;
-    padding-left: 1.625rem;
+    padding-left: 26px;
     overflow-wrap: anywhere;
 }
 
@@ -186,7 +202,7 @@
 
 .home-designologist__sketches {
     position: relative;
-    min-height: 31.75rem;
+    min-height: 508px;
 }
 
 .home-designologist__sketch {
@@ -196,18 +212,18 @@
 
 .home-designologist__sketch--back {
     z-index: 1;
-    top: 15.29rem;
+    top: 244.64px;
     right: 0;
-    width: 11.035rem;
+    width: 176.56px;
     rotate: 2.59deg;
     box-shadow: var(--shadow-200);
 }
 
 .home-designologist__sketch--middle {
     z-index: 2;
-    top: 8.84rem;
+    top: 141.44px;
     left: 0;
-    width: 10.632rem;
+    width: 170.112px;
     rotate: -4.68deg;
     box-shadow: var(--shadow-floating);
 }
@@ -215,8 +231,8 @@
 .home-designologist__sketch--front {
     z-index: 3;
     top: 0;
-    left: 2.08rem;
-    width: 12.435rem;
+    left: 33.28px;
+    width: 198.96px;
     rotate: 7.47deg;
     box-shadow: var(--shadow-200);
 }
@@ -224,9 +240,9 @@
 .home-designologist__diagrams {
     display: grid;
     grid-template-columns: minmax(0, 482fr) minmax(0, 505fr);
-    gap: 4.625rem;
+    gap: 74px;
     align-items: start;
-    width: min(100%, 66.313rem);
+    width: min(100%, 1061.008px);
     margin-inline: auto;
 }
 
@@ -243,13 +259,13 @@
 }
 
 .home-designologist__ideas {
-    width: min(100%, 55.438rem);
-    margin-top: 5rem;
+    width: min(100%, 887.008px);
+    margin-top: 80px;
 }
 
 .home-designologist__mark {
-    width: 4.625rem;
-    margin-top: 4rem;
+    width: 74px;
+    margin-top: 64px;
 }
 
 @media (max-width: 64rem) {
@@ -260,7 +276,8 @@
 
     .home-hero__arrow {
         left: auto;
-        right: 1.5rem;
+        right: 30%;
+        top: 520px;    
     }
 
     .home-designologist__definition {
@@ -270,24 +287,24 @@
 
 @media (max-width: 48rem) {
     .home-hero__layout {
-        min-height: 29rem;
+        min-height: 464px;
         padding-top: var(--space-12);
     }
 
     .home-hero__arrow {
-        top: 21rem;
-        right: 0;
-        width: 11rem;
+        top: 336px;
+        left: 20px;
+        width: 176px;
     }
 
     .home-designologist__definition {
-        grid-template-columns: minmax(0, 1fr) minmax(14rem, .55fr);
+        grid-template-columns: minmax(0, 1fr) minmax(224px, .55fr);
         gap: var(--space-6);
-        min-height: 27rem;
+        min-height: 432px;
     }
 
     .home-designologist__sketches {
-        min-height: 27rem;
+        min-height: 432px;
     }
 
     .home-designologist__diagrams {
@@ -297,26 +314,20 @@
 
 @media (max-width: 40rem) {
     .home-hero__layout {
-        min-height: 30rem;
-        padding-top: var(--space-10);
+        min-height: 600px;
+        padding-block: 80px;
     }
 
     .home-hero__title,
     .home-designologist__copy h2 {
-        font-size: clamp(2.7rem, 12vw, 4rem);
+        font-size: 2.5rem;
+        line-height: 1.2;
         overflow-wrap: anywhere;
     }
 
+
     .home-hero__title {
         white-space: normal;
-    }
-
-    .home-hero__title-line {
-        display: block;
-    }
-
-    .home-hero__mobile-break {
-        display: inline;
     }
 
     .home-hero__copy p:first-child {
@@ -324,13 +335,13 @@
     }
 
     .home-hero__arrow {
-        top: 23.5rem;
-        right: .5rem;
-        width: 9rem;
+        top: 80%;
+        right: 25%;
+        width: 144px;
     }
 
     .home-designologist {
-        padding-bottom: 6rem;
+        padding-bottom: 96px;
     }
 
     .home-designologist__definition {
@@ -340,8 +351,8 @@
     }
 
     .home-designologist__sketches {
-        min-height: 22rem;
-        width: min(100%, 19rem);
+        min-height: 480px;
+        width: min(100%, 304px);
         margin-inline: auto;
     }
 
@@ -351,7 +362,7 @@
 
     .home-designologist__diagrams {
         grid-template-columns: minmax(0, 1fr);
-        width: min(100%, 31.563rem);
+        width: min(100%, 505.008px);
         margin-top: var(--space-8);
     }
 

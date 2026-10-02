@@ -14,8 +14,7 @@ Base do portfólio em HTML5, CSS3 e JavaScript puro.
 
 ## Dependências externas
 
-- GSAP Core `3.15.0` é carregado pelo jsDelivr em `index.html`, com versão fixa e Subresource Integrity (SRI). A biblioteca fica disponível globalmente como `window.gsap` para animações futuras.
-- Plugins do GSAP devem ser adicionados apenas quando uma funcionalidade precisar deles, também com versão fixa e SRI, para evitar bytes desnecessários no carregamento inicial.
+O projeto não possui dependências JavaScript externas. As fontes tipográficas são carregadas do Google Fonts.
 
 ## Padrões de implementação
 
